@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Lifestyle Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+ 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark nav-color">
+        <div class="container-fluid">
+            <a class="navbar-brand color-brown" href="index.html">
+                <i data-feather="dribbble" class="feather mb-1"></i>
+                <strong>Lifestyle Vibes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i data-feather="list" class="feather color-brown"></i>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link color-brown" aria-current="page" href="index.html" onclick="setActive(event)">
+                        <i data-feather="home" class="feather nav-icon mb-1 me-2"></i>Home
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link color-brown active" href="about.html" onclick="setActive(event)">
+                        <i data-feather="info" class="feather nav-icon mb-1 me-2"></i>About
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-brown" href="#" onclick="setActive(event)">
+                            <i data-feather="phone" class="feather nav-icon mb-1 me-2"></i>Contact
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link color-brown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="setActive(event)">
+                        <i data-feather="grid" class="feather nav-icon mb-1 me-2"></i>Category
+                        <i data-feather="chevron-down" class="feather nav-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Wellness</a></li>
+                        <li><a class="dropdown-item" href="#">Fashion</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">View All Category</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn subscribe-button" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+    <main class="container">
+        <h2 class="text-center mt-4 fw-bold fs-1 color-brown">About Lifestyle Vibes</h2>
+        <div class="row my-5 align-items-center">
+            <div class="col-lg-7">
+                <img src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGVhbXxlbnwwfHwwfHx8MA%3D%3D" class="img-fluid" alt="team-photo">
+            </div>
+            <div class="col-lg-5 mt-3 color-brown">
+                <div class="card me-2 mb-3 color-brown">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold text-center">Our Story & Vision</h3>
+                        <p class="card-text">
+                            Lifestyle Vibes was created with a simple goal: to help people live
+                            better, healthier, and more fulfilling lives. We believe that true
+                            happiness comes from balance, mindfulness, and a deep connection to
+                            the world around us.
+                        </p>
+                    </div>
+                </div>
+                <div class="card me-2 mb-3 color-brown">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold text-center">Our Mission</h3>
+                        <p class="card-text">
+                            Our mission is to inspire and empower individuals to live
+                            consciously. We cover various aspects of life including wellness,
+                            fitness, fashion, and mindfulness to help our audience elevate their
+                            everyday experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-5 align-items-center color-brown text-center">
+            <div class="col-12">
+                <h3 class="fw-bold">Meet the Team</h3>
+                <p class="text-center">
+                    Our team consists of wellness enthusiasts, fitness experts, and
+                    lifestyle gurus. We're dedicated to bringing you the latest insights
+                    and trends to help you live your best life.
+                </p>
+            </div>
+            <div class="col-12 d-flex flex-wrap justify-content-center">
+                <div class="card col-lg-2 col-md-4 col-sm-6 me-4 mb-4 color-brown">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" class="card-img-top card-image" alt="person1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Sarah Williams</h5>
+                        <p class="card-text text-center">Founder</p>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 me-4 mb-4 color-brown">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" class="card-img-top card-image" alt="person2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">John Doe</h5>
+                        <p class="card-text text-center">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 me-4 mb-4 color-brown">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" class="card-img-top card-image" alt="person3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Emily Clark</h5>
+                        <p class="card-text text-center">Wellness Coach</p>
+                    </div>
+                </div>
+                <div class="card col-lg-2 col-md-4 col-sm-6 me-4 mb-4 color-brown">
+                    <img src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" class="card-img-top card-image" alt="person4">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Michael Lee</h5>
+                        <p class="card-text text-center">Fitness Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+ 
+    <div aria-label="Subscribe example" id="subscribe" class="my-5 mx-5 subscribe text-center">
+        <h2 class="fw-bold">
+            Stay in the Loop
+            <i data-feather="repeat" class="feather color-brown"></i>
+        </h2>
+        <h3 class="mb-4">Subscribe to Our Newsletter</h3>
+        <form class="d-flex flex-column align-items-center mt-3">
+            <div class="col-md-6">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Enter your Name" required>
+               
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Enter your Email" required>
+               
+                <button type="submit" class="btn button" data-bs-toggle="modal" data-bs-target="#modalpress">Subscribe</button>
+            </div>            
+        </form>
+    </div>
+ 
+    <footer class="footer py-3">
+        <div class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center text-center">
+            <p class="m-0 mx-auto">&copy; 2024 Lifestyle Vibes. All rights reserved.</p>
+            <ul class="list-inline m-0 mx-auto">
+                <li class="list-inline-item">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">
+                <a href="#" class="footer-link">Terms of Use</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+ 
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
