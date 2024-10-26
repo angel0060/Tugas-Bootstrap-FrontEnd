@@ -167,6 +167,11 @@ label {
     box-shadow: 0 4px 8px rgb(214, 192, 179, 0.5);
     color: rgb(73, 54, 40);
 }
+
+input:focus, textarea:focus {
+    border-color: rgb(73, 54, 40) !important;
+    box-shadow: 0 0 10px rgb(73, 54, 40, 0.8) !important; 
+}
  
 .footer {
     background-color: rgb(73, 54, 40);

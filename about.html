@@ -35,7 +35,7 @@
                     </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-brown" href="#" onclick="setActive(event)">
+                        <a class="nav-link color-brown" href="contact.html" onclick="setActive(event)">
                             <i data-feather="phone" class="feather nav-icon mb-1 me-2"></i>Contact
                         </a>
                     </li>
@@ -146,7 +146,7 @@
             <i data-feather="repeat" class="feather color-brown"></i>
         </h2>
         <h3 class="mb-4">Subscribe to Our Newsletter</h3>
-        <form class="d-flex flex-column align-items-center mt-3">
+        <form class="d-flex flex-column align-items-center mt-3" onsubmit="return false;">
             <div class="col-md-6">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Enter your Name" required>
@@ -154,9 +154,26 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Enter your Email" required>
                
-                <button type="submit" class="btn button" data-bs-toggle="modal" data-bs-target="#modalpress">Subscribe</button>
+                <button type="submit" class="btn button" onclick="validateSubscribe()">Subscribe</button>
             </div>            
         </form>
+    </div>
+
+    <div class="modal fade" id="modalpress" tabindex="-1" aria-labelledby="modalabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalabel">Subscribed</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Thanks for Subscribing!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn button" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
     </div>
  
     <footer class="footer py-3">

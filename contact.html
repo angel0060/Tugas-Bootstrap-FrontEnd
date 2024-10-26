@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Lifestyle Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+ 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark nav-color">
+        <div class="container-fluid">
+            <a class="navbar-brand color-brown" href="index.html">
+                <i data-feather="dribbble" class="feather mb-1"></i>
+                <strong>Lifestyle Vibes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i data-feather="list" class="feather color-brown"></i>
+            </button>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link color-brown" aria-current="page" href="index.html" onclick="setActive(event)">
+                        <i data-feather="home" class="feather nav-icon mb-1 me-2"></i>Home
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link color-brown" href="about.html" onclick="setActive(event)">
+                        <i data-feather="info" class="feather nav-icon mb-1 me-2"></i>About
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-brown active" href="contact.html" onclick="setActive(event)">
+                            <i data-feather="phone" class="feather nav-icon mb-1 me-2"></i>Contact
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link color-brown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="setActive(event)">
+                        <i data-feather="grid" class="feather nav-icon mb-1 me-2"></i>Category
+                        <i data-feather="chevron-down" class="feather nav-icon"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Wellness</a></li>
+                        <li><a class="dropdown-item" href="#">Fashion</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">View All Category</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn subscribe-button" href="index.html#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div aria-label="Subscribe example" id="subscribe" class="my-5 mx-5 subscribe">
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="fw-bold text-center">
+                    Contact Us
+                    <i data-feather="message-circle" class="feather color-brown"></i>
+                </h2>
+                <p class="col-md-8 mb-4 text-center">
+                    We're thrilled that you're here! Your thoughts, questions, and feedback mean the world to us. 
+                    Whether you have a query about our blog posts, want to collaborate, or just want to say hi, we're all ears!
+                </p>
+            </div>
+            <form class="d-flex flex-column align-items-center mt-3" onsubmit="return false;">
+                <div class="col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Enter your Name" required>
+                   
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Enter your Email" required>
+                    
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control mb-3" id="message" rows="4" placeholder="Your Message" required></textarea>
+                   
+                    <button type="submit" class="btn button" onclick="validateContact()">Send a Message</button>
+                </div>            
+            </form>
+        </div>
+
+        <div class="modal fade" id="modalpress" tabindex="-1" aria-labelledby="modalabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalabel">Message successfully sent</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Thanks for Contacting Us. We'll respond to you soon!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn button" data-bs-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer py-3">
+        <div class="container d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center text-center">
+            <p class="m-0 mx-auto">&copy; 2024 Lifestyle Vibes. All rights reserved.</p>
+            <ul class="list-inline m-0 mx-auto">
+                <li class="list-inline-item">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                </li>
+                <li class="list-inline-item">
+                <a href="#" class="footer-link">Terms of Use</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+ 
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
